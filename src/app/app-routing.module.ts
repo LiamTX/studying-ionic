@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'alert',
     loadChildren: () => import('./alert/alert.module').then( m => m.AlertPageModule)
+  },
+  {
+    path: 'sheet',
+    loadChildren: () => import('./sheet/sheet.module').then( m => m.SheetPageModule)
   }
 ];
 
